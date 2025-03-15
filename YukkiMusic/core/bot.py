@@ -100,7 +100,7 @@ class YukkiBot(Client):
         get_me = await self.get_me()
         self.username = get_me.username
         self.id = get_me.id
-        self.name = get_me.full_name
+        self.name = self.me.first_name + " " + (self.me.last_name or "")
         self.mention = get_me.mention
 
         try:
