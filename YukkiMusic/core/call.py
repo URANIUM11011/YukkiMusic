@@ -10,7 +10,6 @@
 import asyncio
 from typing import Union
 
-from ntgcalls import TelegramServerError
 from pyrogram.errors import (
     ChannelsTooMuch,
     ChatAdminRequired,
