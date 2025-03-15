@@ -71,7 +71,6 @@ class Userbot(Client):
                 f"Assistant Account {index} failed with error: {str(e)}. Exiting..."
             )
             sys.exit(1)
-
     async def start(self):
         """Start all clients."""
         tasks = [
