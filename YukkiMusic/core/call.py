@@ -18,7 +18,6 @@ from pyrogram.errors import (
     UserAlreadyParticipant,
 )
 from pyrogram.types import InlineKeyboardMarkup
-from pytgcalls import PyTgCalls, filters
 from pytgcalls.exceptions import AlreadyJoinedError
 from pytgcalls.types import (
     ChatUpdate,
