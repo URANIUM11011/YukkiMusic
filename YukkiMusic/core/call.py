@@ -19,7 +19,7 @@ from pyrogram.errors import (
 )
 from pyrogram.types import InlineKeyboardMarkup
 from pytgcalls.exceptions import AlreadyJoinedError
-
+from pytgcalls import PyTgCalls
 
 import config
 from strings import get_string
