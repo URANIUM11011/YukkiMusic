@@ -593,10 +593,6 @@ async def maintenance_on():
         return
     return await onoffdb.insert_one({"on_off": 1})
 
-
-# Audio Video Limit
-from pytgcalls.types.stream import AudioQuality, VideoQuality
-
 AUDIO_FILE = os.path.join(config.TEMP_DB_FOLDER, "audio.json")
 VIDEO_FILE = os.path.join(config.TEMP_DB_FOLDER, "video.json")
 
@@ -622,7 +618,7 @@ async def save_audio_bitrate(chat_id: int, bitrate: str):
     save_data(AUDIO_FILE, audio)
 
 
-async def save_video_bitrate(chat_id: int, bitrate: str):
+async def save_video_bitrate(chaid: int, bitrate: str):
     video[str(chat_id)] = bitrate
     save_data(VIDEO_FILE, video)
 
