@@ -19,7 +19,6 @@ from datetime import datetime
 from functools import wraps
 
 from pyrogram import Client, StopPropagation, errors
-from pyrogram.enums import ChatMemberStatus
 from pyrogram.handlers import MessageHandler
 from pyrogram.types import (
     BotCommand,
