@@ -64,8 +64,7 @@ SONG_DOWNLOAD_DURATION = int(
 LOG_GROUP_ID = getenv("LOG_GROUP_ID", "").strip()
 
 # Your User ID.
-OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "6815918609").split())
+OWNER_ID = getenv("OWNER_ID", "5605603670")
 )  # Input type must be interger
 
 # Get it from http://dashboard.heroku.com/account
